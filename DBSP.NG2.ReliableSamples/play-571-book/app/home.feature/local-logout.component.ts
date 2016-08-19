@@ -1,5 +1,5 @@
 ﻿import { Component, OnInit }        from '@angular/core';
-import { OidcTokenManagerService }  from "../common.services/OidcTokenManager.service"
+import { OidcTokenManagerService }  from "../common.services/oidc-token-manager.service";
 
 @Component({
   selector: 'local-logout',

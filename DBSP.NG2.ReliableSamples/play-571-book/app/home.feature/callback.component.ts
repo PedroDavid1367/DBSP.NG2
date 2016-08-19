@@ -4,7 +4,7 @@ declare let OidcClient: any;
 
 import { Component, OnInit }        from '@angular/core';
 import { Router }                   from "@angular/router";
-import { OidcTokenManagerService }  from "../common.services/OidcTokenManager.service"
+import { OidcTokenManagerService }  from "../common.services/oidc-token-manager.service";
 
 @Component({
   selector: 'callback',
