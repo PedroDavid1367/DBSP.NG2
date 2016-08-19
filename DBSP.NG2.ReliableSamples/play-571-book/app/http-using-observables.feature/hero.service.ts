@@ -8,7 +8,7 @@ export class HeroService {
 
   constructor(private http: Http) { }
 
-  private heroesUrl = "app/mocked-data/heroes.json";  // URL to web API
+  private heroesUrl = "app/heroes.json";  // URL to web API
 
   public getHeroes(): Observable<Hero[]> {
     return this.http
@@ -17,9 +17,8 @@ export class HeroService {
       .catch(this.handleError);
   }
 
-  public addHero(name: string): Observable<Hero> {
-    let body = JSON.stringify({ name });
-    console.log(body);
+  public addHero(heroContainer: {}): Observable<Hero> {
+    let body = JSON.stringify(heroContainer);
     let headers = new Headers({ "Content-Type": "application/json" });
     let options = new RequestOptions({ headers: headers });
     return this.http

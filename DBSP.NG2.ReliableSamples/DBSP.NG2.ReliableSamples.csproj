@@ -108,12 +108,10 @@
     <Content Include="the-old-project\tsconfig.json" />
     <Content Include="the-old-project\typings.json" />
     <Content Include="the-old-project\app\mocked-data\heroes.json" />
-    <Content Include="ngModule-sample\README.md" />
-    <Content Include="ngModule-sample\tsconfig.json" />
     <Content Include="play-571-book\typings.json" />
     <Content Include="play-571-book\tsconfig.json" />
     <Content Include="play-571-book\package.json" />
-    <Content Include="play-571-book\app\mocked-data\heroes.json" />
+    <Content Include="play-571-book\app\heroes.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -122,12 +120,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ngModule-sample\app\contact\contact.component.css" />
-    <Content Include="ngModule-sample\app\contact\contact.component.html" />
-    <Content Include="ngModule-sample\app\shared\title.component.html" />
-    <Content Include="ngModule-sample\index.html" />
-    <Content Include="ngModule-sample\styles.css" />
-    <Content Include="ngModule-sample\systemjs.config.js" />
     <Content Include="play-571-book\favicon.ico" />
     <Content Include="play-571-book\index.html" />
     <Content Include="play-571-book\webpack.config.js" />
@@ -151,30 +143,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="ngModule-sample\app\app.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\app.module.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\app.routing.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\contact\contact.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\contact\contact.module.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\contact\contact.routing.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\contact\contact.service.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\crisis\crisis-detail.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\crisis\crisis-list.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\crisis\crisis.module.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\crisis\crisis.routing.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\crisis\crisis.service.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero-detail.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero-list.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero.module.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero.routing.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\hero\hero.service.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\main.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\shared\awesome.pipe.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\shared\highlight.directive.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\shared\shared.module.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\shared\title.component.ts" />
-    <TypeScriptCompile Include="ngModule-sample\app\shared\user.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.providers.ts" />
@@ -189,6 +157,9 @@
     <TypeScriptCompile Include="play-571-book\app\home.feature\local-logout.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\not-found.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\silent-refresh.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\wikipedia.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\wiki-search-smart.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\wiki-search.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero-list.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero.model.ts" />
     <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero.service.ts" />
@@ -200,6 +171,9 @@
     <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize.routing.ts" />
+    <TypeScriptCompile Include="play-571-book\app\mocked-data\hero-data.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category-list.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-detail.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-list.component.ts" />
@@ -209,6 +183,8 @@
     <TypeScriptCompile Include="play-571-book\app\notes.feature\notes.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\notes.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\polyfills.ts" />
+    <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-sample01.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-sample02.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples-home.component.ts" />

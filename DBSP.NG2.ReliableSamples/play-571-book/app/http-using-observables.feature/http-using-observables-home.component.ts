@@ -8,8 +8,13 @@ import { HeroListComponent }  from "./hero-list.component";
   <br />
   <br />
   <hero-list></hero-list>
-  `,
-  directives: [HeroListComponent]
+  <br />
+  <br />
+  <wiki-search></wiki-search>
+  <br />
+  <br />
+  <wiki-search-smart></wiki-search-smart>
+  `
 })
 export class HttpUsingObservablesHomeComponent {
 

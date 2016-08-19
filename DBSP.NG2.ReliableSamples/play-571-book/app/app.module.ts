@@ -1,7 +1,10 @@
 import { NgModule }            from "@angular/core";
 import { BrowserModule }       from "@angular/platform-browser";
 //import { CommonModule }        from "@angular/common";
-import { HttpModule }          from "@angular/http";
+import { HttpModule,
+  JsonpModule }                from "@angular/http";
+import { FormsModule }         from "@angular/forms";
+
 import { APP_PROVIDERS }       from "./app.providers";
 
 /* App Root */
@@ -22,6 +25,8 @@ import { routing }             from "./app.routing";
     BrowserModule,
     //CommonModule,
     HttpModule,
+    JsonpModule,
+    FormsModule,
     HomeModule,
     RxjsSamplesModule,
     TripsModule,

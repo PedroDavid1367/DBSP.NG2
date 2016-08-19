@@ -1,5 +1,6 @@
+// These imports need a heavy review.
 import {HTTP_PROVIDERS, Http, Request, RequestOptionsArgs, Response, XHRBackend,
-  RequestOptions, ConnectionBackend, Headers}  from '@angular/http';
+  RequestOptions, ConnectionBackend, Headers}  from "@angular/http";
 import { provide }                             from "@angular/core";  
 import { OidcTokenManagerService }             from "./common.services/oidc-token-manager.service"
 //import { HttpInterceptorService }              from "./common.services/http-interceptor.service"
@@ -7,6 +8,8 @@ import { HttpExtendedService }                 from "./common.services/http-exte
 import { TripsService }                        from "./trips.feature/trips.services/trips.service";
 import { TripsHomegGuard }                     from "./trips.feature/trips-home.guard";
 import { IHeroService }                        from "./notes.feature/hero.service";
+import { InMemoryBackendService, SEED_DATA }   from "angular2-in-memory-web-api";
+import { HeroData }                            from "./mocked-data/hero-data";
 
 let $ = require("jquery");
 
@@ -18,6 +21,8 @@ export const APP_PROVIDERS = [
   TripsService,
   IHeroService,
   TripsHomegGuard,               // Not quite sure about this guard.
+  { provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server
+  { provide: SEED_DATA, useClass: HeroData }                // in-mem server data
 
   // The router dependency could be avoided since actually does nothing in the current service.
   //HttpInterceptorService

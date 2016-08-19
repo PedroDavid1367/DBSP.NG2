@@ -1,6 +1,6 @@
-﻿import { Component, OnInit } from "@angular/core";
-import { Hero }      from "./hero.model";
-import { HeroService }  from "./hero.service";
+﻿import { Component, OnInit }  from "@angular/core";
+import { Hero }               from "./hero.model";
+import { HeroService }        from "./hero.service";
 
 @Component({
   selector: 'hero-list',
@@ -19,7 +19,9 @@ import { HeroService }  from "./hero.service";
   </button>
   <div class="error" *ngIf="errorMessage">{{errorMessage}}</div>
   `,
-  providers: [HeroService],
+  providers: [
+    HeroService
+  ]
 })
 export class HeroListComponent implements OnInit {
   errorMessage: string;
@@ -28,19 +30,24 @@ export class HeroListComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
-  ngOnInit() { this.getHeroes(); }
+  ngOnInit() {
+    this.getHeroes();
+  }
 
   getHeroes() {
-    this.heroService.getHeroes()
+    this.heroService
+      .getHeroes()
       .subscribe(
-      heroes => this.heroes = heroes,
-      error => this.errorMessage = <any>error);
+        heroes => this.heroes = heroes,
+        error => this.errorMessage = <any>error
+      );
   }
 
   addHero(name: string) {
     if (!name) { return; }
+    let heroContainer = { name: name };
     this.heroService
-      .addHero(name)
+      .addHero(heroContainer)
       .subscribe(
         hero => this.heroes.push(hero),
         error => this.errorMessage = <any>error
