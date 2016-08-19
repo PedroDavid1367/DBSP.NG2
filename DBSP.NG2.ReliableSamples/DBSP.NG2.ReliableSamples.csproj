@@ -100,6 +100,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="play-571-book\app\app.component.html" />
+    <Content Include="play-571-book\app\js.libs\oidc-token-manager.js" />
+    <Content Include="play-571-book\app\materialize-samples\collapsibles-component.html" />
     <Content Include="the-old-project\LICENSE" />
     <Content Include="the-old-project\package.json" />
     <Content Include="the-old-project\tsconfig.json" />
@@ -110,6 +113,7 @@
     <Content Include="play-571-book\typings.json" />
     <Content Include="play-571-book\tsconfig.json" />
     <Content Include="play-571-book\package.json" />
+    <Content Include="play-571-book\app\mocked-data\heroes.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -173,18 +177,40 @@
     <TypeScriptCompile Include="ngModule-sample\app\shared\user.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.module.ts" />
+    <TypeScriptCompile Include="play-571-book\app\app.providers.ts" />
     <TypeScriptCompile Include="play-571-book\app\app.routing.ts" />
+    <TypeScriptCompile Include="play-571-book\app\common.services\http-extended.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\common.services\http-interceptor.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\common.services\oidc-token-manager.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\app-home.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\home.feature\callback.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\home.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\home.module.ts" />
+    <TypeScriptCompile Include="play-571-book\app\home.feature\local-logout.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\home.feature\not-found.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\home.feature\silent-refresh.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero-list.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero.model.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\hero.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\http-using-observables.feature\http-using-observables-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\main.ts" />
+    <TypeScriptCompile Include="play-571-book\app\materialize-samples\dbsp-collapsible.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize-home.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category-list.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-detail.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-list.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\hero.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\hero.type.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\notes-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\polyfills.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-samples-home.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\trips.feature\trips-home.guard.ts" />
     <TypeScriptCompile Include="play-571-book\app\trips.feature\trips.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\trips.feature\trips.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\trips.feature\trips-home.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\trips.feature\trips.services\trips.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\typings.d.ts" />
     <TypeScriptCompile Include="play-571-book\app\vendor.ts" />
     <TypeScriptCompile Include="the-old-project\app\app.component.ts" />

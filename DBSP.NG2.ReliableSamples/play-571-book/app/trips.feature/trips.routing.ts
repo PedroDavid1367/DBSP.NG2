@@ -2,7 +2,6 @@ import { Routes, RouterModule }      from "@angular/router";
 import { TripsHomeComponent }  from "./trips-home.component";
 
 export const routes: Routes = [
-  { path: "", redirectTo: "trips", pathMatch: "full" },
   { path: "trips", component: TripsHomeComponent }
 ];
 

@@ -1,9 +1,11 @@
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule }      from "@angular/router";
+
+import { AppHomeComponent }          from "./home.feature/app-home.component"
+import { RxJSSamplesHomeComponent }  from "./rxjs-samples.feature/rxjs-samples-home.component";
+import { TripsHomeComponent }        from "./trips.feature/trips-home.component";
 
 export const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
-  { path: "trips", loadChildren: "./app/trips.feature/trips.module" },
-  { path: "rxjs-samples", loadChildren: "./app/rxjs-samples.feature/rxjs-samples.module" }
 ];
 
 export const routing = RouterModule.forRoot(routes);
