@@ -172,8 +172,12 @@
     <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\materialize-samples\materialize.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\mocked-data\hero-data.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category-container.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-item.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-list.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-container.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note.component.ts" />
-    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category.component.ts" />
+    <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category-item.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\dbsp-note-category-list.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-detail.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\hero-list.component.ts" />
