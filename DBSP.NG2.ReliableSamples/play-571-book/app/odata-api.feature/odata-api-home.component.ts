@@ -59,9 +59,9 @@ export class ODataAPIHomeComponent {
     };
     let headers = new Headers();
     headers.set("Content-Type", "application/json");
+    headers.set("Accept", "application/json");
     headers.set("Authorization", "Bearer " + this._mgr.access_token);
     let body = JSON.stringify(noteContainer);
-    //let headers = new Headers({ "Content-Type": "application/json" });
     let options = new RequestOptions({ headers: headers });
     this._http
       .post(this._rememberMeAPIUrl, body, options)
