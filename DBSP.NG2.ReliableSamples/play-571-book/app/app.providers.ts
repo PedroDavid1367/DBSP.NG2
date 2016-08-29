@@ -20,9 +20,9 @@ export const APP_PROVIDERS = [
   HttpExtendedService,           // This is new one
   TripsService,
   IHeroService,
-  TripsHomegGuard,               // Not quite sure about this guard.
-  { provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server
-  { provide: SEED_DATA, useClass: HeroData }                 // in-mem server data
+  TripsHomegGuard               // Not quite sure about this guard.
+  //{ provide: XHRBackend, useClass: InMemoryBackendService }, // in-mem server
+  //{ provide: SEED_DATA, useClass: HeroData }                 // in-mem server data
 
   // The router dependency could be avoided since actually does nothing in the current service.
   //HttpInterceptorService

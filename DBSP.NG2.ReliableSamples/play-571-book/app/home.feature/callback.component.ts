@@ -17,7 +17,8 @@ export class CallbackComponent implements OnInit {
     client_id: "tripgalleryimplicitAngular2",
     redirect_uri: "http://localhost:8080/callback",
     load_user_profile: false,
-    authority: "https://localhost:44317/identity"
+    //authority: "https://localhost:44317/identity"
+    authority: "http://localhost:1693/identity"
   };
 
   private _mgr: any; 

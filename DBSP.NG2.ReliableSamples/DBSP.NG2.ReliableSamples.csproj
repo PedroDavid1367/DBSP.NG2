@@ -101,6 +101,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="play-571-book\app\app.component.html" />
+    <Content Include="play-571-book\app\js.libs\odatajs-4.0.0.min.js" />
     <Content Include="play-571-book\app\js.libs\oidc-token-manager.js" />
     <Content Include="play-571-book\app\materialize-samples\collapsibles-component.html" />
     <Content Include="the-old-project\LICENSE" />
@@ -149,6 +150,7 @@
     <TypeScriptCompile Include="play-571-book\app\app.routing.ts" />
     <TypeScriptCompile Include="play-571-book\app\common.services\http-extended.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\common.services\http-interceptor.service.ts" />
+    <TypeScriptCompile Include="play-571-book\app\common.services\odata-manager.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\common.services\oidc-token-manager.service.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\app-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\home.feature\callback.component.ts" />
@@ -186,6 +188,9 @@
     <TypeScriptCompile Include="play-571-book\app\notes.feature\notes-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\notes.module.ts" />
     <TypeScriptCompile Include="play-571-book\app\notes.feature\notes.routing.ts" />
+    <TypeScriptCompile Include="play-571-book\app\odata-api.feature\odata-api.module.ts" />
+    <TypeScriptCompile Include="play-571-book\app\odata-api.feature\odata-api.routing.ts" />
+    <TypeScriptCompile Include="play-571-book\app\odata-api.feature\odata-api-home.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\polyfills.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-sample01.component.ts" />
     <TypeScriptCompile Include="play-571-book\app\rxjs-samples.feature\rxjs-sample02.component.ts" />

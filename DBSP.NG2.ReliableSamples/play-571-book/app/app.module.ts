@@ -17,6 +17,7 @@ import { TripsModule }         from "./trips.feature/trips.module";
 import { NotesModule }         from "./notes.feature/notes.module";
 import { MaterializeModule }   from "./materialize-samples/materialize.module";
 import { HttpUsingObservablesModule }  from "./http-using-observables.feature/http-using-observables.module";
+import { ODataAPIModule }  from "./odata-api.feature/odata-api.module";
 
 import { routing }             from "./app.routing";
 
@@ -33,6 +34,7 @@ import { routing }             from "./app.routing";
     NotesModule,
     MaterializeModule,
     HttpUsingObservablesModule,
+    ODataAPIModule,
     routing
   ],
   providers: [
